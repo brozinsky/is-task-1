@@ -1,0 +1,89 @@
+$color-white: #F1F1F1;
+$color-green: #84B82A;
+$color-purple: #675190;
+$color-bg: #262626;
+
+.promo{
+    position: relative;
+    background: $color-bg;
+    color: $color-white;
+
+    &__title{
+        color: $color-green;
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    &__wrap{
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__secondary{
+        color: $color-purple;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__ul{
+       padding: 0 15px;
+    }
+
+    &__item{
+        list-style: none;
+
+        &::before{
+            content: "\2022";
+            color: $color-green;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+    &__container{
+        display: flex;
+        width: 250px;
+        align-self: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width: 768px) {
+            align-self: flex-start;
+        }
+
+        &-left{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-green;
+            max-width: 150px;
+            text-align: right;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+    &__price{
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        color: $color-purple;
+        font-weight: bold;
+        max-height: 55px;
+
+        &-small{
+            align-self: flex-end;
+            font-size: 25px;
+        }
+    }
+}

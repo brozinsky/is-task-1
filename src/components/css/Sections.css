@@ -1,0 +1,29 @@
+.sections {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sections__col-2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.sections__low {
+  height: 340px;
+  width: 400px;
+}
+
+.sections__med {
+  height: 418px;
+  width: 400px;
+}
+
+.sections__wrapper {
+  margin: 30px;
+}
+/*# sourceMappingURL=Sections.css.map */

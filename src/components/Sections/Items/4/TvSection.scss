@@ -1,0 +1,86 @@
+$color-green: #84B82A;
+$color-white: #fff;
+
+.tv{
+    position: relative;
+    width: 400px;
+    background: $color-green;
+    color: $color-white;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__bot{
+        position: relative;
+        max-height: 290px;
+        max-width: 100vw;
+
+        &-name{
+            position: absolute;
+            font-weight: 400;
+            bottom: 17%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+        }
+
+        &-secondary{
+            font-weight: bold;
+            font-size: 14px;
+            color: $color-green;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.1s;
+
+        &:hover{
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &__arrow{
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &--left{
+            left: 30px;
+        }
+
+        &--right{
+            right: 30px;
+            transform: rotate(180deg) translateY(50%);
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

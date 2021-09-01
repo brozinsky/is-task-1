@@ -1,0 +1,16 @@
+.promo {
+  position: relative;
+  background: #262626;
+  color: #F1F1F1;
+}
+
+.promo__title {
+  color: #84B82A;
+}
+
+.promo__secondary {
+  color: #675190;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*# sourceMappingURL=PromoSection.css.map */

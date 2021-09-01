@@ -1,0 +1,110 @@
+
+.sections{
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 50% 50%;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__col-2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+    &__low{
+        height: 340px;
+        width: 400px;
+    }
+
+    &__med{
+        height: 418px;
+        width: 400px;
+
+        @media (max-width: 768px) {
+            height: auto;
+        }
+    }
+
+    &__wrapper{
+        padding: 30px;
+    }
+}
+
+.sc{
+    &-1{
+        max-width: 100vw;
+    }
+    &-2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        @media (max-width: 1200px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        @media (max-width: 768px) {
+            width: 100vw;
+            align-self: center;
+        }
+    }
+    &-3{
+        max-width: 100vw;
+    }
+    &-4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        @media (max-width: 1200px) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 485px;
+            width: 400px;
+        }
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+    &-5{
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+    &-6{
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+
+    &-7{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        @media (max-width: 1200px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+}

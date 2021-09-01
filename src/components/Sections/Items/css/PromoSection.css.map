@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,MAAM,CAAA;EACF,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAJH,OAAO;EAKd,KAAK,EARK,OAAO;CAmCpB;;AAzBI,AAAD,aAAQ,CAAA;EACJ,KAAK,EAVC,OAAO;CAWhB;;AAEA,AAAD,iBAAY,CAAA;EACR,KAAK,EAbE,OAAO;EAcd,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "../5/PromoSection.scss"
+    ],
+    "names": [],
+    "file": "PromoSection.css"
+}

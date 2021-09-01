@@ -1,0 +1,131 @@
+.vod {
+  position: relative;
+  height: 485px;
+  width: 400px;
+  color: #fff;
+}
+
+.vod:hover .vod__button {
+  display: block;
+}
+
+.vod__darken {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.513)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.513));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vod__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 425px;
+  width: 340px;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vod__container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vod__title {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+
+.vod__title--big {
+  font-size: 40px;
+}
+
+.vod__movie {
+  display: inline-block;
+  font-size: 25px;
+  max-width: 200px;
+}
+
+.vod__movie-tags {
+  color: #84B82A;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.vod__movie-price {
+  margin-left: 14px;
+  color: #2C8FBD;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.vod__arrow {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.vod__arrow--rotate {
+  right: 0;
+  -webkit-transform: rotate(180deg) translateY(50%);
+          transform: rotate(180deg) translateY(50%);
+}
+
+.vod__arrow:hover {
+  cursor: pointer;
+}
+
+.vod__button {
+  position: absolute;
+  width: 180px;
+  height: 45px;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: #fff 1px solid;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.vod__button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=VodSection.css.map */

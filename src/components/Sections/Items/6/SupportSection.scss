@@ -1,0 +1,98 @@
+$color-white: #fff;
+$color-green: #84B82A;
+
+
+.support{
+        position: relative;
+        background-image: url('../../../../assets/6/section-6-bg.png');
+        color: $color-white;
+
+        &__bg{
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+       }
+
+       &__secondary{
+        color: $color-green;
+        text-transform: uppercase;
+        font-weight: bold;
+       }
+
+       &__wrapper{
+        padding: 30px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+       }
+
+       &__container{
+               display: flex;
+               align-items: space-between;
+               justify-items: space-between;
+               text-transform: uppercase;
+               font-size: 14px;
+
+               &-right{
+                margin-left: 14px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+               }
+
+               &-top{
+                display: flex;
+                justify-content: space-between;
+               }
+
+               &-bot{
+                display: flex;
+                justify-content: space-between;
+               }
+
+               &-text{
+                width: 150px;
+                color: #fff;
+               }
+
+               &-arrow{
+                width: 20px;
+                transform: rotate(180deg);
+               }
+
+               &-icon{
+                width: 30px;
+               }
+
+               &-hr{
+                margin: 10px 0;
+                border-top: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+               }
+       }
+
+       &__avatar{
+               &-border{
+                       border: 2px solid rgba(255, 255, 255, 0.2);
+                       border-radius: 50%;
+                       height: 138px;
+                       width: 138px;
+                       display: flex;
+                       justify-content: center;
+               }
+        margin: 20px;
+        }
+
+        &__small{
+        color: $color-green;
+        font-size: 14px;
+        left: 0;
+        max-width: 260px;
+        text-align: center;
+        margin: 0 auto;
+        }
+}

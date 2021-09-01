@@ -1,0 +1,44 @@
+.support {
+  position: relative;
+  background-image: url("../../../../assets/section-6-bg.png");
+  color: #fff;
+}
+
+.support__bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.support__secondary {
+  color: #84B82A;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.support__wrapper {
+  margin: 30px;
+}
+
+.support__avatar {
+  margin: 20px;
+}
+
+.support__avatar-border {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 138px;
+  width: 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.support__small {
+  color: #84B82A;
+}
+/*# sourceMappingURL=SupportSection.css.map */

@@ -1,0 +1,26 @@
+.apps {
+  position: relative;
+  background-color: #FFFFFF;
+  background: url("../../../../assets/section-7-bg.png");
+}
+
+.apps:hover {
+  background: #675190;
+}
+
+.apps:hover .apps__title {
+  color: #FFFFFF;
+}
+
+.apps:hover .apps__text {
+  color: #FFFFFF;
+}
+
+.apps__title {
+  color: #675190;
+}
+
+.apps__text {
+  color: #757575;
+}
+/*# sourceMappingURL=AppSection.css.map */

@@ -1,0 +1,54 @@
+.slider {
+  position: relative;
+  max-width: 800px;
+  height: 486px;
+  overflow: hidden;
+}
+
+.slider__info {
+  z-index: 3;
+  color: #fff;
+  position: absolute;
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.slider__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.slider__btn {
+  background: grey;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-left: 6px;
+  border: 1px solid transparent;
+}
+
+.slider__btn-container {
+  position: absolute;
+  bottom: 20px;
+  right: 26px;
+  z-index: 3;
+}
+
+.slider__btn--active {
+  background: #fff;
+}
+
+.slider__btn:hover {
+  cursor: pointer;
+  background: #aaa;
+}
+/*# sourceMappingURL=SliderSection.css.map */
